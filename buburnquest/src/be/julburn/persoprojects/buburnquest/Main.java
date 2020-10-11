@@ -13,6 +13,7 @@ public class Main{
 		System.in.read();
 		julburn.getStats();
 		System.in.read();
+		Demon salar = new Demon();
 
 
 

@@ -9,7 +9,9 @@ public class Heros {
 
 	public void setNom(){
 		Scanner sc = new Scanner(System.in);
-		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuel nom veux-tu donner à ton Héros ?");
+		for(int cpt = 0; cpt < 60; cpt++)
+			System.out.println("\n");
+		System.out.println("\nQuel nom veux-tu donner à ton Héros ?");
 		this.nom = sc.nextLine();
 	}
 
@@ -38,7 +40,7 @@ public class Heros {
 
 
 	public void dansTaGueule(){
-
+		
 	}
 
 }

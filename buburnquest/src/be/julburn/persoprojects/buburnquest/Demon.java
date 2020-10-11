@@ -20,4 +20,8 @@ public class Demon{
 		}
 		System.out.println("\nTu tombes sur un " + taille + " démon !");
 	}
+
+	public int getForce(){
+		return this.force;
+	}
 }
