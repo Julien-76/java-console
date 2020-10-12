@@ -3,8 +3,8 @@ import java.io.IOException;
 
 public class Demon{
 
-	int pv, force;
-	boolean etat;
+	public int pv, force;
+	public boolean etat;
 
 	public void setStats(){
 		String taille;
@@ -12,13 +12,17 @@ public class Demon{
 		if (proba < 0.5){
 			this.pv = 31;
 			this.force = 3;
-			taille = "grand";
+			taille = "petit";
 		} else {
 			this.pv = 60;
 			this.force = 5;
-			taille = "petit";
+			taille = "grand";
 		}
 		System.out.println("\nTu tombes sur un " + taille + " démon !");
+	}
+
+	public void getStats(){
+
 	}
 
 	public int getForce(){

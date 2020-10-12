@@ -3,13 +3,13 @@ import java.util.Scanner;
 import java.io.IOException;
 
 public class Heros {
-		int pv, force;
-		String nom;
-		Boolean etat;
+		public int pv, force;
+		public String nom;
+		public Boolean etat;
 
 	public void setNom(){
 		Scanner sc = new Scanner(System.in);
-		for(int cpt = 0; cpt < 60; cpt++)
+		for(int cpt = 0; cpt < 30; cpt++)
 			System.out.println("\n");
 		System.out.println("\nQuel nom veux-tu donner à ton Héros ?");
 		this.nom = sc.nextLine();
@@ -34,13 +34,20 @@ public class Heros {
 		}
 	}
 
+	public void heroName(){
+		System.out.print(this.nom + " ");
+	}
+
 	public void getStats(){
 		System.out.println("\n" + this.nom + "\nPV : " + this.pv + "\nForce : " + this.force);
 	}
 
+	public int getForce(){
+		return this.force;
+	}
 
 	public void dansTaGueule(){
-		
+		//this.pv = this.pv - .getForce();
 	}
 
 }
