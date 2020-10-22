@@ -6,8 +6,10 @@ public class Demon{
 	public int pv, force;
 	public boolean etat;
 
+
 	public void setStats(){
 		String taille;
+		this.etat = true;
 		float proba = (float)Math.random();
 		if (proba < 0.5){
 			this.pv = 31;
@@ -18,14 +20,18 @@ public class Demon{
 			this.force = 5;
 			taille = "grand";
 		}
-		System.out.println("\nTu tombes sur un " + taille + " démon !");
-	}
-
-	public void getStats(){
-
+		System.out.println("C'est un " + taille + " démon ");
 	}
 
 	public int getForce(){
 		return this.force;
+	}
+
+	public int getPv(){
+		return this.pv;
+	}
+
+	public boolean getEtat(){
+		return this.etat;
 	}
 }
