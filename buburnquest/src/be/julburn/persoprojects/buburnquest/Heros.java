@@ -7,22 +7,11 @@ public class Heros {
 		public String nom;
 		public Boolean etat, hCombat = false;
 
-	public Heros (int pv, int force, boolean etat, String nom){
-		super();
-		this.init(pv, force, etat);
-	}
-
-	public void init(int pPv, int pForce, boolean pEtat){
-		this.pv = pPv;
-		this.force = pForce;
-		this.etat = pEtat;
-	}
-
 	public void setNom(){
 		Scanner sc = new Scanner(System.in);
-		for(int cpt = 0; cpt < 30; cpt++)
+		for(int cpt = 0; cpt < 5; cpt++)
 			System.out.println("\n");
-		System.out.println("\nQuel nom veux-tu donner à ton Héros ?");
+		System.out.println("Quel nom veux-tu donner à ton Héros ?");
 		this.nom = sc.nextLine();
 	}
 
@@ -47,19 +36,19 @@ public class Heros {
 	}
 
 	public String getNom(){
-		return this.nom;
+	    return this.nom;
 	}
 
 	public int getPv(){
-		return this.pv;
+	    return this.pv;
 	}
 
 	public int getForce(){
-		return this.force;
+	    return this.force;
 	}
 
 	public boolean getEtat(){
-		return this.etat;
+	    return this.etat;
 	}
 
 
@@ -78,6 +67,8 @@ public class Heros {
 			if (b == a){
 				System.out.println("\n\nPas de démon en vue... tu continues à avancer...");
 				System.in.read();
+                System.out.println("Tu en profites pour récuperer un peu...\nPV de " + this.getNom() + " : " + this.getPv() + " + 5");
+                this.pv = this.getPv() + 5;
 				this.hCombat = false;
 			} else {
 				System.out.println("\n\nUn démon surgit devant toi ! !");
@@ -86,7 +77,7 @@ public class Heros {
 			}
 		}
 	public boolean getCombat(){
-		return this.hCombat;
+	    return this.hCombat;
 	}
 
 }

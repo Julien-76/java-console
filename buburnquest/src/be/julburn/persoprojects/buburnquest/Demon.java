@@ -12,12 +12,12 @@ public class Demon{
 		this.etat = true;
 		float proba = (float)Math.random();
 		if (proba < 0.5){
-			this.pv = 31;
-			this.force = 3;
+			this.pv = 34;
+			this.force = 5;
 			taille = "petit";
 		} else {
 			this.pv = 60;
-			this.force = 5;
+			this.force = 8;
 			taille = "grand";
 		}
 		System.out.println("C'est un " + taille + " démon ");
