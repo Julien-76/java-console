@@ -15,7 +15,6 @@ public class Combat {
             this.attaqueHeros(geralt, eredin);
             System.in.read();
         }
-        this.afficheStats(geralt, eredin);
     }
 
     public void attaqueDemon(Heros geralt, Demon eredin) throws IOException{
